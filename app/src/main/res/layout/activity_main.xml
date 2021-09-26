@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/bsc"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your BSC Wallet Balance"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cover"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edtWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="80dp"
+        android:hint="Enter your BSC Wallet Address"/>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtWallet"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"/>
+    <TextView
+        android:id="@+id/txtbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BSC balance is: 0 BNB "
+        android:layout_alignParentLeft="true"
+        android:textSize="22sp"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
